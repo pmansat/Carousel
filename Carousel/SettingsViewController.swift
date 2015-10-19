@@ -10,7 +10,11 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
+        scrollView.contentSize = imageView.image!.size
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

@@ -9,7 +9,7 @@
 import UIKit
 
 class SignInViewController: UIViewController {
-    
+
     
 // define vars
     
@@ -104,6 +104,10 @@ class SignInViewController: UIViewController {
     }
     
     
+    @IBAction func onTap(sender: AnyObject) {
+        username.endEditing(true)
+        password.endEditing(true)
+          }
     
        override func viewDidLoad() {
         super.viewDidLoad()

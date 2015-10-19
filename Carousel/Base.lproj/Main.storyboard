@@ -92,6 +92,10 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9m4-NH-aIf" appends="YES" id="KEk-zs-3ww"/>
+                                </connections>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign_in_nav_bar" id="C4w-U7-4Qm">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
@@ -159,8 +163,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bsy-Ni-Zy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9m4-NH-aIf">
+                    <connections>
+                        <action selector="onTap:" destination="Zt6-PJ-t2E" id="1M3-44-Rlj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="564" y="348"/>
+            <point key="canvasLocation" x="652" y="359"/>
         </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="qfp-pK-vMj">
@@ -281,7 +290,7 @@
             <objects>
                 <viewController id="zEr-UG-aGS" customClass="SettingsViewController" customModule="Carousel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w99-O1-gWa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings_nav" id="4fM-Fx-Wyx">
@@ -289,15 +298,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="hxE-xO-1E1">
-                                <rect key="frame" x="0.0" y="49" width="320" height="1000"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="49" width="320" height="716"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="okQ-Vb-bEH">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="701"/>
+                                        <rect key="frame" x="0.0" y="-116" width="320" height="916"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZjG-As-AMH">
-                                        <rect key="frame" x="8" y="627" width="304" height="41"/>
+                                        <rect key="frame" x="8" y="616" width="304" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="modal" id="9jh-Os-G74"/>
@@ -316,7 +325,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="800"/>
+                    <size key="freeformSize" width="320" height="916"/>
+                    <connections>
+                        <outlet property="imageView" destination="okQ-Vb-bEH" id="Rai-vQ-blz"/>
+                        <outlet property="scrollView" destination="hxE-xO-1E1" id="4ih-xF-LcZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLt-d4-xf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
