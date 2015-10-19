@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SignInViewController.swift"
+            timestampString = "466838586.29766"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "keyboardWillHide(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Carousel.SignInViewController.keyboardWillHide (Carousel.SignInViewController)(Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.NSNotification&gt;) -&gt; ()"
+                  moduleName = "Carousel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pmansat/Downloads/iOS_Class/Week2/Carousel/SignInViewController.swift"
+                  timestampString = "466831870.284323"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "2080">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Carousel.SignInViewController.(keyboardWillHide (Carousel.SignInViewController) -&gt; (Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.NSNotification&gt;) -&gt; ()).(closure #1)"
+                  moduleName = "Carousel"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pmansat/Downloads/iOS_Class/Week2/Carousel/SignInViewController.swift"
+                  timestampString = "466831870.284494"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "572">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Carousel/TutorialViewController.swift"
+            timestampString = "466838586.29766"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "TutorialViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
