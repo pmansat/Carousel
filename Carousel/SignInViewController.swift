@@ -14,7 +14,7 @@ class SignInViewController: UIViewController {
 // define vars
     
     var initialY: CGFloat!
-    let offset: CGFloat = -50
+    let offset: CGFloat = -10
     
  
 // define outlets
@@ -27,18 +27,17 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
         @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    let alertController = UIAlertController(title: "Incorrect", message: "Please correct", preferredStyle: .Alert)
-   let alertController2 = UIAlertController(title: "Incorrect", message: "Please correct", preferredStyle: .Alert)
+let alertController = UIAlertController(title: "Incorrect", message: "Please enter username and password", preferredStyle: .Alert)
 
     // define functions
 
     
     
-//    @IBAction func editingDidBegin(sender: AnyObject) {
-//        scrollView.contentOffset.y = 20
-//        loginButton.transform = CGAffineTransformMakeTranslation(100, 200)
-//        
-//    }
+    @IBAction func editingDidBegin(sender: AnyObject) {
+        scrollView.contentOffset.y = 10
+        loginButton.transform = CGAffineTransformMakeTranslation(10, 20)
+        
+    }
     
     
     func keyboardWillShow(notification: NSNotification!) {
@@ -83,27 +82,24 @@ class SignInViewController: UIViewController {
 
     
     @IBAction func whenButtomPressed(sender: AnyObject) {
-        if username.text!.isEmpty || password.text!.isEmpty {
-            let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
-                // handle response here.
+        if username.text!.isEmpty ||  password.text!.isEmpty {
+           let cancelAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
             }
-            // add the OK action to the alert controller
-            alertController.addAction(OKAction)
-            presentViewController(alertController, animated: true) {
-                // optional code for what happens after the alert controller has finished presenting
+            alertController.addAction(cancelAction)
+                       presentViewController(alertController, animated: true) {
             }
         }
         else {
-            if username.text == "promeet" || password.text == "welcome"   {
+            if username.text! == "promeet" &&  password.text! == "welcome"   {
                 activityIndicator.startAnimating()
                 delay(2) {
                     self.activityIndicator.stopAnimating()}
-                    performSegueWithIdentifier("loginSegue", sender: nil)
+                performSegueWithIdentifier("loginSegue", sender: nil)
             }
-                    }
+        }
     }
-    
-    
+
+
     @IBAction func onTap(sender: AnyObject) {
         username.endEditing(true)
         password.endEditing(true)
@@ -132,36 +128,3 @@ class SignInViewController: UIViewController {
 
 
 
-
-//
-//@IBAction func whenButtonPressed(sender: AnyObject) {
-//    if username.text!.isEmpty || password.text!.isEmpty {
-//        let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
-//            // handle response here.
-//        }
-//        // add the OK action to the alert controller
-//        alertController.addAction(OKAction)
-//        presentViewController(alertController, animated: true) {
-//            // optional code for what happens after the alert controller has finished presenting
-//        }
-//    }
-//    else {
-//        if username.text == "promeet" || password.text == "welcome"   {
-//            activityIndicator.startAnimating()
-//            delay(2) {
-//                self.activityIndicator.stopAnimating()}
-//        }
-//        
-//    }
-//}
-
-
-
-//    @IBAction func whenButtonPressed(sender: AnyObject) {
-//        if username.text! != "promeet" || password.text! != "welcome"   {
-//                activityIndicator.startAnimating()
-//                delay(2) {
-//                    self.activityIndicator.stopAnimating()}
-//            }
-//
-//        }
