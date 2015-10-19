@@ -29,5 +29,7 @@ Settings
 User can dismiss the settings screen.
 User can log out
 
+Walkthru :
 
+![Video Walkthrough](Carousel_PMANSATA.gif)
 
